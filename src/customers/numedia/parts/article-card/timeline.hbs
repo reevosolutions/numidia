@@ -1,0 +1,18 @@
+<div class="article-card article-card-timeline uk-light rv-hover-effect-wrapper">
+    <div class="uk-card uk-light"  style="direction: rtl">
+        <div class="uk-card-media-top">
+            <div class="times" uk-grid>
+                <div class="uk-width-expand">{{timeStart}}</div>
+                <div class="uk-width-auto">{{timeEnd}}</div>
+            </div>
+            <a href="{{href}}" class="uk-display-block rv-hover-effect-3d">
+                <img data-src="{{image.url}}" width="{{image.width}}" height="{{image.height}}" alt="{{title}}"
+                    class="uk-width-expand" uk-img>
+            </a>
+        </div>
+        <div class="uk-card-body uk-padding-remove uk-margin-small">
+            <h3 class="title uk-margin-small"><a href="{{href}}" class="uk-display-block">{{{title}}}</a></h3>
+            <p class="description uk-margin-remove">{{{description}}}</p>
+        </div>
+    </div>
+</div>

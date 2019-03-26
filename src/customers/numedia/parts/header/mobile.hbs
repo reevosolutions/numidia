@@ -1,0 +1,75 @@
+<div uk-sticky="sel-target: .uk-navbar-container; cls-active: uk-navbar-sticky" class="">
+    <nav class="uk-navbar-container uk-navbar-transparent uk-box-shadow-medium" uk-navbar>
+
+        <div class="nav-overlay uk-navbar-right uk-flex-1" hidden>
+            <div class="uk-navbar-item uk-width-expand">
+                <form class="uk-search uk-search-navbar uk-width-1-1"  action="{{app.url}}">
+                    <input class="uk-search-input" type="search" name="s" placeholder="بحث..." autofocus>
+                </form>
+            </div>
+
+            <a class="uk-navbar-toggle" uk-toggle="target: .nav-overlay; animation: uk-animation-fade" href="#"
+                uk-icon="icon: close; ratio: 1;" title="إخفاء البحث"></a>
+        </div>
+
+        <div class="uk-navbar-right">
+            <div class="nav-overlay search-toggle">
+                <a class="uk-navbar-toggle" uk-toggle="target: .nav-overlay; animation: uk-animation-fade" href="#"
+                    uk-icon="icon: search; ratio: .75;" title="إظهار البحث"></a>
+            </div>
+        </div>
+        <div class="uk-navbar-left">
+            <div class="nav-overlay mobile-menu-toggle">
+                <a class="uk-navbar-toggle" uk-toggle href="#mobile-menu" uk-icon="icon: menu-bars; ratio: .75;"
+                    title="تبديل ظهور القائمة الجانبية"></a>
+            </div>
+        </div>
+    </nav>
+</div>
+
+<div id="mobile-menu" class="uk-dark" uk-offcanvas="mode: slide; overlay: true;">
+    <div class="uk-offcanvas-bar">
+        <a class="uk-display-block uk-text-center uk-max-height-small uk-offcanvas-header" title="{{app.name}}" href="{{app.url}}">
+            <img class="uk-max-height-small" data-src="{{app.icon}}" alt="{{app.name}}" width="150" height="150" uk-img>
+        </a>
+        <div class="uk-dark">
+            <button class="uk-offcanvas-close" type="button" uk-close></button>
+            <ul class="uk-nav uk-nav-default">
+                {{#each menus.main}}
+                    {{#if divider}}
+                        <li class="uk-nav-divider"></li>
+                    {{else}}
+                        <li class="{{#if active}}uk-active{{/if}} {{#if live}}live{{/if}}">
+                            <a href="{{href}}" class=""><span>{{{title}}}</span></a>
+                            {{#if children}}
+                                <div class="uk-navbar-dropdown"
+                                    uk-dropdown="animation: uk-animation-slide-top-small; duration: 400; offset: 0">
+                                    <ul class="uk-nav uk-navbar-dropdown-nav">
+                                        {{#each children}}
+                                            <li
+                                                class="{{#if this.active}}uk-active{{/if}} {{#if this.live}}live{{/if}}">
+                                                <a href="{{this.href}}" class=""><span>{{this.title}}</span></a>
+                                            </li>
+                                        {{/each}}
+                                    </ul>
+                                </div>
+                            {{/if}}
+                        </li>
+                    {{/if}}
+                {{/each}}
+            </ul>
+            <!-- social -->
+            <div class="uk-text-center uk-padding">
+                <a rel="noreferrer" target="_blank" href="{{app.social.facebook}}"
+                    class="uk-icon-link uk-preserve sn-hover-facebook uk-padding-xxsmall"
+                    uk-icon="icon: facebook-colored; ratio: 1.4;" title="فيسبوك"></a>
+                <a rel="noreferrer" target="_blank" href="{{app.social.instagram}}"
+                    class="uk-icon-link uk-preserve sn-hover-instagram uk-padding-xxsmall"
+                    uk-icon="icon: instagram-colored; ratio: 1.4;" title="انستغرام"></a>
+                <a rel="noreferrer" target="_blank" href="{{app.social.twitter}}"
+                    class="uk-icon-link uk-preserve sn-hover-twitter uk-padding-xxsmall"
+                    uk-icon="icon: twitter-colored; ratio: 1.4;" title="تويتر"></a>
+            </div>
+        </div>
+    </div>
+</div>

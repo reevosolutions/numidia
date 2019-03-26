@@ -1,0 +1,61 @@
+@import "colors";
+.message-404 {
+    h2 {
+        font-size: 2.4rem;
+        font-weight: 400;
+        color: $color-slider-bg-light;
+    }
+}
+
+.glitch {
+    color: $color-slider-bg-light;
+    font-size: 200px;
+    position: relative;
+    width: 210px;
+    margin: 0 auto;
+    line-height: 160px;
+}
+
+@keyframes noise-anim {
+    $steps: 20;
+    @for $i from 0 through $steps {
+        #{percentage($i*(1/$steps))} {
+            clip: rect(random(200)+px, 9999px, random(200)+px, 0);
+        }
+    }
+}
+
+.glitch:after {
+    content: '404';
+    position: absolute;
+    right: -2px;
+    text-shadow: -1px 0 red;
+    top: 0;
+    color: darken($color-slider-bg-light, 10);
+    background: $color-muted;
+    overflow: hidden;
+    clip: rect(0, 900px, 0, 0);
+    animation: noise-anim 2s infinite linear alternate-reverse;
+}
+
+@keyframes noise-anim-2 {
+    $steps: 20;
+    @for $i from 0 through $steps {
+        #{percentage($i*(1/$steps))} {
+            clip: rect(random(200)+px, 9999px, random(200)+px, 0);
+        }
+    }
+}
+
+.glitch:before {
+    content: '404';
+    position: absolute;
+    right: 2px;
+    text-shadow: 1px 0 blue;
+    top: 0;
+    color: darken($color-slider-bg-light, 5);
+    background: $color-muted;
+    overflow: hidden;
+    clip: rect(0, 900px, 0, 0);
+    animation: noise-anim-2 3s infinite linear alternate-reverse;
+}

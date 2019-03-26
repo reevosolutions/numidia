@@ -1,0 +1,237 @@
+@import "colors";
+.section-serie-header {
+    .show-times {
+        background: #1a1a1a;
+        .uk-inline {
+            color: #fff;
+            background: linear-gradient(-30deg, $color-serie-allEpisodesBtn-bg-start 0%, $color-serie-allEpisodesBtn-bg-end 100%);
+            display: inline-block;
+            line-height: 80px;
+            font-size: 2.4rem;
+            font-weight: 400;
+            display: inline-block;
+        }
+    }
+    .subsection.main {
+        .play-current-episode-btn {
+            background-color: $color-red-header;
+            color: #fff;
+            transition: all .2s;
+            margin-left: 39px;
+            &:hover {
+                background-color: darken($color-red-header, 15);
+                color: #fff;
+            }
+        }
+        .serie-header-content {
+            padding-right: 76px;
+            padding-left: 50px;
+            padding-bottom: 50px;
+            .categories {
+                margin-right: -15px;
+                li {
+                    a {
+                        color: $color-red-header;
+                        display: inline-block;
+                        font-size: 2.6rem;
+                        padding: 0 15px;
+                        transition: all .2s;
+                        &:hover,
+                        &:focus {
+                            color: darken($color-red-header, 35);
+                        }
+                    }
+                }
+            }
+            .title {
+                line-height: 2.6rem;
+            }
+            .description {
+                font-size: 1.5rem;
+                line-height: 2rem;
+            }
+            .play-current-episode-link {
+                color: $color-red-header;
+                font-size: 2.4rem;
+                line-height: 2.6rem;
+                transition: all .2s;
+                &:hover {
+                    color: darken($color-red-header, 15);
+                }
+            }
+        }
+    }
+    &.mobile {
+        .show-times {
+            background: #1a1a1a;
+            .uk-inline {
+                color: #fff;
+                background: $color-mobile-header;
+                line-height: 2.2rem;
+                font-size: 1.6rem;
+                font-weight: 400;
+                padding-bottom: 7px;
+                display: block;
+            }
+        }
+        .subsection.main {
+            .serie-header-content {
+                padding-right: 15px;
+                padding-left: 15px;
+                padding-bottom: 15px;
+                .categories {
+                    margin-right: -15px;
+                    li {
+                        a {
+                            font-size: 1.8rem;
+                        }
+                    }
+                }
+                .title {
+                    line-height: 2rem;
+                }
+                .description {
+                    font-size: 1.3rem;
+                    line-height: 1.6rem;
+                }
+                .play-current-episode-link {
+                    color: $color-red-header;
+                    font-size: 1.4rem;
+                    line-height: 2.6rem;
+                    transition: all .2s;
+                    .icon {
+                        background-color: $color-red-header;
+                        color: #fff;
+                        transition: all .2s;
+                        margin-left: 10px;
+                    }
+                    &:hover {
+                        color: darken($color-red-header, 15);
+                        .icon {
+                            background-color: darken($color-red-header, 15);
+                            color: #fff;
+                        }
+                    }
+                }
+            }
+        }
+    }
+}
+
+.section-serie-episodes {
+    .title-wrapper {
+        margin-top: -14px;
+        .subsection.title {
+            color: #fff;
+            background: linear-gradient(-30deg, $color-serie-allEpisodesBtn-bg-start 0%, $color-serie-allEpisodesBtn-bg-end 100%);
+            display: inline-block;
+            line-height: 65px;
+            padding-left: 60px;
+            font-size: 2.6rem;
+            font-weight: 400;
+            display: inline-block;
+            margin-bottom: 20px;
+            margin-top: -40px;
+            .box {
+                display: inline-block;
+                width: 80px;
+                height: 80px;
+                background: $color-serie-allEpisodesBtn-bg-dark;
+                margin-left: 60px;
+            }
+        }
+    }
+    .subsection.main {
+        .article-card-episode {
+            cursor: pointer;
+            &:hover {}
+        }
+    }
+    .slidenav {
+        background-color: #ff0126;
+        color: #fff;
+        transition: all .2s;
+        padding: 10px 15px;
+        &:hover,
+        &:focus {
+            background-color: darken(#ff0126, 15);
+        }
+    }
+    &.mobile {
+        .title-wrapper {
+            margin-top: 0px;
+            .title {
+                line-height: 35px;
+                padding-left: 15px;
+                font-size: 1.8rem;
+                font-weight: 400;
+                display: inline-block;
+                margin-bottom: 15px;
+                margin-top: 0px;
+                .box {
+                    width: 45px;
+                    height: 45px;
+                    background: #990005;
+                    margin-left: 10px;
+                }
+            }
+        }
+    }
+}
+
+.section-other-programs {
+    margin-top: 80px;
+    .title-wrapper {
+        margin-top: -80px;
+        .subsection.title {
+            color: #fff;
+            background: linear-gradient(-30deg, $color-serie-otherProgramsTitle-bg-end 0%, $color-serie-otherProgramsTitle-bg-start 100%);
+            line-height: 65px;
+            padding-right: 60px;
+            font-size: 2.6rem;
+            font-weight: 400;
+            display: inline-block;
+            margin-bottom: 20px;
+            vertical-align: bottom;
+            .box {
+                display: inline-block;
+                width: 80px;
+                height: 80px;
+                background: $color-serie-otherProgramsTitle-bg-dark;
+                margin-right: 60px;
+            }
+        }
+    }
+    .subsection.main-wrapper {
+        background: rgba(0, 0, 0, 0.1) url(../assets/images/serie-other-programs-bg.png);
+        background-size: cover;
+        background-position: center;
+    }
+    .slidenav {
+        background-color: #ff0126;
+        color: #fff;
+        transition: all .2s;
+        padding: 20px 20px;
+        &:hover,
+        &:focus {
+            background-color: darken(#ff0126, 15);
+        }
+    }
+    &.mobile {
+        .title-wrapper {
+            margin-top: -37px;
+            .subsection.title {
+                line-height: 37px;
+                padding-right: 10px;
+                font-size: 1.8rem;
+                margin-bottom: 20px;
+                .box {
+                    display: inline-block;
+                    width: 45px;
+                    height: 45px;
+                    margin-right: 15px;
+                }
+            }
+        }
+    }
+}

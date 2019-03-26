@@ -1,0 +1,23 @@
+<div class="article-card article-card-category-featured">
+    <div class=" uk-border-rounded uk-background-default uk-padding-small">
+        <div class="uk-card uk-grid uk-grid-small uk-child-width-1-2@s rv-hover-effect-wrapper" uk-grid>
+            <div class="uk-card-media-right uk-cover-container uk-position-relative">
+                <a href="{{href}}" class="uk-display-block uk-padding-small">
+                    <img data-src="{{image.url}}" width="{{image.width}}" height="{{image.height}}" alt="{{title}}"
+                        class="uk-border-rounded uk-width-expand uk-box-shadow-small uk-box-shadow-hover-medium rv-hover-effect-3d" uk-img>
+                </a>
+                
+            </div><!-- relative -->
+            <div class="">
+                <div class="uk-card-body uk-padding-small">
+                    <h3 class="title uk-margin-small"><a href="{{href}}" class="uk-display-block uk-link-text">{{{title}}}</a></h3>
+                    <div class="description uk-text-small uk-text-muted">{{{description}}}</div>
+                    <div class="read-more-wrapper uk-text-center uk-padding">
+                        <a href="{{href}}" class="uk-button rv-hover-effect-3d">قراءة المزيد</a>
+                    </div>
+                    <div class="uk-text-left uk-text-body uk-position-bottom-left uk-margin-small-left ">{{createdAgo}}</div>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>

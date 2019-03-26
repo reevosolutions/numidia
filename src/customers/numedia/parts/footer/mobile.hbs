@@ -1,0 +1,35 @@
+<div class="uk-container">
+    <div uk-grid>
+        <div class="uk-width-1-2">
+            <div class="widget widget-footer-1 uk-text-center uk-padding-xxsmall">
+                <a class="uk-inline uk-width-2-3 uk-margin-auto" href="{{app.url}}">
+                    <img data-src="{{app.logo}}" alt="{{app.name}}" uk-img>
+                </a>
+            </div>
+        </div>
+        <div class="uk-width-1-2">
+            <div class="uk-text-center">
+                <div class="widget widget-footer-social-links uk-text-center uk-inline">
+                    <ul class="uk-navbar-nav">
+                        <li><a rel="noreferrer" target="_blank" href="{{app.social.facebook}}" class="uk-icon-link sn-hover-facebook"
+                                uk-icon="icon: facebook; ratio: 1.2;"></a>
+                        </li>
+                        <li><a rel="noreferrer" target="_blank" href="{{app.social.instagram}}" class="uk-icon-link sn-hover-instagram"
+                                uk-icon="icon: instagram; ratio: 1.2;"></a>
+                        </li>
+                        <li><a rel="noreferrer" target="_blank" href="{{app.social.twitter}}" class="uk-icon-link sn-hover-twitter"
+                                uk-icon="icon: twitter; ratio: 1.2;"></a>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="uk-text-center">
+        <div class="widget widget-footer-copyrights">
+            <div class="uk-text-center uk-padding-small uk-text-small">
+                {{{app.copyrights}}}
+            </div>
+        </div>
+    </div>
+</div>

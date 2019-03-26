@@ -1,0 +1,15 @@
+@import "colors";
+.message-construction {
+    img {
+        display: block;
+        width: 300px;
+        height: auto;
+        margin: 0 auto;
+        margin-top: 10px;
+    }
+    h2 {
+        font-size: 2.4rem;
+        font-weight: 400;
+        color: $color-slider-bg-light;
+    }
+}

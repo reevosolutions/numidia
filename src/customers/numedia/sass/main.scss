@@ -1,0 +1,34 @@
+@import "custom/variables";
+// 1. Your custom variables and variable overwrites.
+@import "theme/alert.scss";
+// 2. Import default variables and available mixins.
+@import "../../../../node_modules/uikit/src/scss/variables.scss";
+@import "../../../../node_modules/uikit/src/scss/mixins.scss";
+// 3. Your custom mixin overwrites.
+@import "theme/alert-mixins.scss";
+// ... import all
+// 4. Import UIkit
+@import "../../../../node_modules/uikit/src/scss/uikit.scss";
+// 5. rtl fix
+@import "rtl";
+// 6. custom
+@import "mCustomScrollBar/jquery.mCustomScrollbar.scss";
+@import "custom/mCustomScrollBar";
+@import "custom/social";
+@import "custom/breaking-news-ticker";
+@import "custom/custom";
+@import "custom/widgets";
+@import "custom/home";
+@import "custom/article";
+@import "custom/category";
+@import "custom/search";
+@import "custom/serie";
+@import "custom/watch";
+@import "custom/card";
+@import "custom/pub";
+@import "custom/regions";
+@import "custom/error404";
+@import "custom/construction";
+@import "custom/responsive";
+@import "custom/fontRelated";
+@import "custom/placeholders";

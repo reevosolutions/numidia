@@ -1,0 +1,238 @@
+<!DOCTYPE html>
+<html dir="rtl" lang="ar">
+
+<head>
+    <meta charset="UTF-8">
+    <title>
+        <%= htmlWebpackPlugin.options.title %>
+    </title>
+    <link rel="manifest" href="/wp-content/themes/dzNumedia/assets/icons/manifest.json">
+    <!-- <link rel="stylesheet" href="//fonts.googleapis.com/earlyaccess/notokufiarabic.css" /> -->
+    <script>
+        var vv = {
+            view: "article",
+            id: 13
+        };
+    </script>
+</head>
+
+<body>
+    <header class="page-header" id="page-header">
+        <div class="rv-placeholder header">
+            <div uk-sticky="sel-target: .uk-navbar-container; cls-active: uk-navbar-sticky" class="uk-background-white">
+                <nav class="uk-navbar-container uk-navbar-transparent uk-box-shadow-medium" uk-navbar>
+                    <div class="uk-navbar-right">
+                        <a class="uk-navbar-item uk-logo uk-display-block uk-text-center uk-padding-small" title="{{app.name}}" href="">
+                            <div class="logo"></div>
+                            <span class="slogan uk-display-block uk-text-small"></span>
+                        </a>
+                    </div>
+
+                    <div class="uk-navbar nav-overlay uk-margin-auto">
+                        <ul class="uk-navbar-nav">
+                            <li class=""><a href="#" class=""><span></span></a> </li>
+                            <li class=""><a href="#" class=""><span></span></a> </li>
+                            <li class=""><a href="#" class=""><span></span></a> </li>
+                            <li class=""><a href="#" class=""><span></span></a> </li>
+                            <li class=""><a href="#" class=""><span></span></a> </li>
+                        </ul>
+                    </div>
+
+                    <div class="nav-overlay uk-navbar-left uk-flex-1" hidden>
+
+                        <div class="uk-navbar-item uk-width-expand">
+                            <form class="uk-search uk-search-navbar uk-width-1-1" action="{{app.url}}">
+                                <input class="uk-search-input" type="search" name="s" placeholder="بحث..." autofocus>
+                            </form>
+                        </div>
+
+                        <a class="uk-navbar-toggle" uk-toggle="target: .nav-overlay; animation: uk-animation-fade" href="#" uk-icon="icon: close; ratio: 2;" title="إخفاء البحث"></a>
+                    </div>
+
+                    <div class="uk-navbar-left">
+                        <div class="nav-overlay search-toggle">
+                            <a class="uk-navbar-toggle" uk-toggle="target: .nav-overlay; animation: uk-animation-fade" href="#" uk-icon="icon: search; ratio: 2;" title="إظهار البحث"></a>
+                        </div>
+                        <div class="widget widget-header-social-links uk-text-center uk-inline uk-visible@l">
+                            <div class="title uk-text-small uk-position-top-center">للتواصل معنا</div>
+                            <ul class="uk-navbar-nav">
+                                <li>
+                                    <a rel="noreferrer" target="_blank" href="#" class="uk-icon-link sn-hover-facebook" uk-icon="icon: facebook; ratio: 1.2;" title="فيسبوك"></a>
+                                </li>
+                                <li>
+                                    <a rel="noreferrer" target="_blank" href="#" class="uk-icon-link sn-hover-instagram" uk-icon="icon: instagram; ratio: 1.2;" title="انستغرام"></a>
+                                </li>
+                                <li>
+                                    <a rel="noreferrer" target="_blank" href="#" class="uk-icon-link sn-hover-twitter" uk-icon="icon: twitter; ratio: 1.2;" title="تويتر"></a>
+                                </li>
+                            </ul>
+                        </div>
+                    </div>
+                </nav>
+            </div>
+        </div>
+    </header>
+    <!-- /.header -->
+
+    <main class="page-main uk-background-muted uk-padding uk-padding-remove-horizontal uk-padding-remove-bottom desktop-only" id="page-main">
+        <div class="uk-container uk-margin">
+            <div class="" uk-grid>
+                <div class="uk-width-2-3@m">
+                    <div class="current-article-wrapper">
+                        <div class="rv-placeholder article">
+                            <!-- start placeholder -->
+                            <article class="uk-article full-article">
+                                <div class="article-header">
+                                    <h1 class="uk-article-title article-title uk-margin-small uk-margin-remove-top title"></h1>
+                                    <div class="uk-text-left uk-padding-small uk-padding-remove-vertical article-meta"><span></span></div>
+                                </div>
+
+                                <div class="image-wrapper uk-margin-bottom image uk-border-rounded"> </div>
+                                <div class="body-wrapper body">
+                                    <div class="uk-width-1-1"></div>
+                                    <div class="uk-width-4-5"></div>
+                                    <div class="uk-width-5-6"></div>
+                                    <div class="uk-width-3-5"></div>
+                                    <br/>
+                                    <div class="uk-width-1-1"></div>
+                                    <div class="uk-width-4-5"></div>
+                                    <div class="uk-width-5-6"></div>
+                                    <div class="uk-width-3-5"></div>
+                                    <br/>
+                                    <div class="uk-width-1-1"></div>
+                                    <div class="uk-width-4-5"></div>
+                                    <div class="uk-width-5-6"></div>
+                                    <div class="uk-width-3-5"></div>
+                                    <br/>
+                                    <div class="uk-width-1-1"></div>
+                                    <div class="uk-width-4-5"></div>
+                                    <div class="uk-width-5-6"></div>
+                                    <div class="uk-width-3-5"></div>
+                                    <br/>
+                                </div>
+
+                                <div class="article-footer uk-flex-middle " uk-grid>
+                                    <div class="uk-width-expand">
+                                        <a href="#{{author.href}}" class="article-author uk-flex-middle uk-link-muted uk-grid-small uk-inline" uk-grid>
+                                            <span class="uk-width-auto">
+                                                            <img class="uk-border-pill" data-src="" width="48" height="48" alt="{{author.name}}" uk-img>
+                                                        </span>
+                                            <span class="uk-width-expand author-name"></span>
+                                        </a>
+                                    </div>
+                                    <div class="uk-width-auto">
+                                        <div class="desktop-only">
+                                            <span class="uk-inline uk-margin-small-left ">شارك:</span>
+                                            <div class="share-wrapper uk-inline">
+                                                <a href="" class="uk-icon-button uk-margin-small-left sn-twitter" uk-icon="twitter" data-url="" data-title="{{title}}"></a>
+                                                <a href="" class="uk-icon-button  uk-margin-small-left sn-facebook" uk-icon="facebook" data-url="" data-title="{{title}}"></a>
+                                                <a href="" class="uk-icon-button sn-google_plus" uk-icon="google-plus" data-url="" data-title="{{title}}"></a>
+                                            </div>
+                                        </div>
+                                    </div>
+
+                                </div>
+                            </article>
+                            <!-- end placeholder -->
+                        </div>
+                    </div>
+                </div>
+                <div class="uk-width-1-3@m">
+                    <div class="sidebar uk-margin-large-top">
+                        <div class="widget widget-most-popular uk-margin">
+                            <section class="section-article-most-popular" id="section-article-most-popular">
+                                <h2 class="subsection title  uk-position-relative uk-text-center uk-margin-remove uk-padding-xsmall">
+                                    الأكثر قراءة
+                                </h2>
+                                <div class="subsection main">
+
+                                </div>
+                            </section>
+                        </div>
+                        <div class="widget widget-sidebar-pub uk-margin">
+                            <div class=" uk-text-center">
+                                <div class="pub pub-300x600 uk-inline">
+                                    <div class="uk-overlay uk-position-cover">
+                                        <div class="uk-position-center">
+                                            مساحة إعلانية شاغرة
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="uk-container uk-margin-small">
+            <div class="widget widget-read-more">
+                <section class="section-article-read-more" id="section-article-read-more">
+                    <h2 class="subsection title  uk-position-relative uk-margin-small">
+                        اقرأ أيضا
+                    </h2>
+                    <div class="subsection main">
+                        <div class="uk-child-width-1-2@s uk-child-width-1-3@m uk-grid-small grid" uk-grid></div>
+                    </div>
+                </section>
+            </div>
+            <div class="widget widget-pub-bottom">
+                <div class="uk-padding uk-padding-remove-horizontal uk-text-center">
+                    <div class="pub pub-980x120 uk-inline">
+                        <div class="uk-overlay uk-position-cover">
+                            <div class="uk-position-center">
+                                مساحة إعلانية شاغرة
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </main>
+    <!-- main desktop-->
+
+    <main class="page-main uk-background-default mobile-only" id="page-main-mobile">
+        <div class="uk-container uk-margin">
+            <div class="current-article-wrapper">
+                article
+            </div>
+        </div>
+        <div class="uk-margin-small">
+            <div class="widget widget-related">
+                <section class="section-article-related" id="section-article-related">
+                    <h2 class="subsection title  uk-position-relative uk-margin-small uk-padding-xsmall">
+                        متعلقات
+                    </h2>
+                    <div class="subsection main">
+                        <div class="uk-child-width-1-2@s uk-child-width-1-3@m uk-grid-small grid" uk-grid></div>
+                    </div>
+                    <div class="uk-padding-xsmall uk-padding-remove-horizontal">
+                        <div class="widget-related-overlay uk-text-center">
+                            <a class="widget-related-more-button uk-button uk-border-rounded" uk-toggle="target: .widget-related-overlay; animation: uk-animation-fade" href="#">المزيد من الأخبار</a>
+                        </div>
+                        <div class="subsection more widget-related-overlay" hidden>
+                            <div class="uk-child-width-1-2@s uk-child-width-1-3@m uk-grid-small grid" uk-grid></div>
+                        </div>
+                    </div>
+                </section>
+            </div>
+            <div class="widget widget-pub-bottom">
+                <div class="uk-padding-xsmall uk-text-center uk-background-muted">
+                    <div class="pub pub-748x90 uk-inline uk-border-rounded">
+                        <div class="uk-overlay uk-position-cover">
+                            <div class="uk-position-center">
+                                مساحة إعلانية شاغرة
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </main>
+    <!-- main mobile-->
+
+    <footer class="page-footer" id="page-footer"></footer>
+    <!-- footer -->
+
+</body>
+
+</html>

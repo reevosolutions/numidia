@@ -1,0 +1,30 @@
+<div class=" uk-border-rounded uk-background-default uk-box-shadow-small uk-box-shadow-hover-large rv-hover-effect-3d">
+    <div class="article-card article-card-last-news-featured">
+        <div class="uk-card uk-grid uk-grid-small uk-child-width-1-2@s" uk-grid>
+            <div class="uk-card-media-right uk-cover-container uk-position-relative">
+                <a href="{{href}}" class="uk-display-block ">
+                    <img data-src="{{image.url}}" width="{{image.width}}" height="{{image.height}}" alt="{{title}}"
+                        class="uk-border-rounded uk-width-expand" uk-img>
+                </a>
+                <div class="uk-position-top-left uk-padding-small">
+                    <a href="#" class="uk-icon-link" uk-icon="icon: sharethis; ratio: .5;"></a>
+                    <div uk-dropdown="animation: uk-animation-slide-top-small; duration: 500; mode: click; pos: bottom-left;"
+                        class="dropdown-share uk-border-rounded uk-text-center">
+                        <a href="{{href}}" class="uk-icon-button uk-margin-small-left sn-twitter" uk-icon="twitter"
+                            data-url="{{href}}" data-title="{{title}}"></a>
+                        <a href="{{href}}" class="uk-icon-button  uk-margin-small-left sn-facebook" uk-icon="facebook"
+                            data-url="{{href}}" data-title="{{title}}"></a>
+                        <a href="{{href}}" class="uk-icon-button sn-google_plus" uk-icon="google-plus"
+                            data-url="{{href}}" data-title="{{title}}"></a>
+                    </div>
+                </div>
+            </div><!-- relative -->
+            <div class="">
+                <div class="uk-card-body uk-padding-small">
+                    <h3 class="title uk-margin-small"><a href="{{href}}" class="uk-display-block uk-link-text">{{{title}}}</a></h3>
+                    <div class="description uk-text-small uk-text-muted">{{{description}}}</div>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>

@@ -1,0 +1,47 @@
+.pub {
+    max-width: 100%;
+    overflow: hidden;
+    background: #444;
+    color: #fff;
+    margin: auto;
+    position: relative;
+    &.pub-980x90 {
+        width: 980px;
+        height: 90px;
+    }
+    &.pub-980x120 {
+        width: 980px;
+        height: 120px;
+    }
+    &.pub-978x90 {
+        width: 978px;
+        height: 90px;
+    }
+    &.pub-978x120 {
+        width: 978px;
+        height: 120px;
+    }
+    &.pub-300x600 {
+        width: 300px;
+        height: 600px;
+    }
+    &.pub-300x250 {
+        width: 300px;
+        height: 250px;
+    }
+    &.pub-748x90 {
+        width: 748px;
+        height: 90px;
+    }
+    &.pub-730x90 {
+        width: 730px;
+        height: 90px;
+    }
+    .pub-here {}
+}
+
+body {
+    background-size: contain;
+    background-attachment: fixed;
+    background-position: top center;
+}

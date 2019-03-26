@@ -1,0 +1,137 @@
+<!DOCTYPE html>
+<html dir="rtl" lang="ar">
+
+<head>
+    <meta charset="UTF-8">
+    <title>
+        <%= htmlWebpackPlugin.options.title %>
+    </title>
+    <link rel="manifest" href="/wp-content/themes/dzNumedia/assets/icons/manifest.json">
+    <script>
+        var vv = {
+            view: "serie",
+            id: 2
+        };
+    </script>
+</head>
+
+<body>
+    <header class="page-header" id="page-header"></header>
+    <!-- /.header -->
+
+    <main class="page-main uk-background-muted desktop-only" id="page-main">
+        <section class="section-serie-header uk-box-shadow-medium">
+            <div class="subsection main">
+            </div>
+        </section>
+
+        <section class="section-serie-episodes" id="section-serie-episodes">
+            <div class="uk-container title-wrapper">
+                <h2 class="subsection title uk-position-relative uk-margin-small">
+                    <span class="uk-inline box"></span>
+                    <span>جميع الحلقات</span>
+                </h2>
+            </div>
+
+            <div class="subsection main uk-container">
+            </div>
+
+            <div id="modal-youtube-player" class="uk-flex-top" uk-modal>
+                <div class="uk-modal-dialog uk-width-auto uk-margin-auto-vertical">
+                    <button class="uk-modal-close-outside" type="button" uk-close></button>
+                    <iframe id="youtube-player" class="uk-responsive-width" src="" width="640" height="360" frameborder="0" allow="autoplay; encrypted-media" allowfullscreen uk-video uk-responsive></iframe>
+                </div>
+            </div>
+        </section>
+
+        <section class="section-other-programs" id="section-other-programs">
+
+            <div class="subsection main-wrapper uk-position-relative uk-padding">
+                <div class="uk-container title-wrapper">
+                    <h2 class="subsection title uk-position-relative uk-margin-small">
+                        <span class="uk-inline">برامج أخرى</span>
+                        <span class="uk-inline box"></span>
+                    </h2>
+                </div>
+                <div class="subsection main uk-container">
+                </div>
+            </div>
+        </section>
+
+        <div class="uk-container">
+            <div class="widget widget-pub-bottom">
+                <div class="uk-padding uk-padding-remove-horizontal uk-text-center">
+                    <div class="pub pub-980x120 uk-inline">
+                        <div class="uk-overlay uk-position-cover">
+                            <div class="uk-position-center">
+                                مساحة إعلانية شاغرة
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </main>
+    <!-- main desktop -->
+
+    <main class="page-main uk-background-muted mobile-only" id="page-main">
+        <section class="section-serie-header mobile uk-box-shadow-medium">
+            <div class="subsection main">
+            </div>
+        </section>
+
+        <section class="section-serie-episodes mobile" id="section-serie-episodes">
+            <div class="title-wrapper uk-padding-small">
+                <h2 class="subsection title uk-position-relative uk-margin-small">
+                    <span class="uk-inline box"></span>
+                    <span>جميع الحلقات</span>
+                </h2>
+            </div>
+
+            <div class="subsection main uk-container">
+            </div>
+
+            <div id="modal-youtube-player" class="uk-flex-top" uk-modal>
+                <div class="uk-modal-dialog uk-width-auto uk-margin-auto-vertical">
+                    <button class="uk-modal-close-outside" type="button" uk-close></button>
+                    <iframe id="youtube-player" class="uk-responsive-width" src="" width="640" height="360" frameborder="0" allow="autoplay; encrypted-media" allowfullscreen uk-video uk-responsive></iframe>
+                </div>
+            </div>
+        </section>
+
+        <section class="section-other-programs mobile" id="section-other-programs">
+
+            <div class="subsection main-wrapper uk-position-relative uk-padding-small">
+                <div class="title-wrapper">
+                    <h2 class="subsection title uk-position-relative uk-margin-small">
+                        <span class="uk-inline uk-padding-xxsmall uk-padding-remove-top">برامج أخرى</span>
+                        <span class="uk-inline box"></span>
+                    </h2>
+                </div>
+                <div class="subsection main">
+                </div>
+            </div>
+        </section>
+
+        <div class="uk-container">
+            <div class="widget widget-pub-bottom">
+                <div class="uk-padding uk-padding-remove-horizontal uk-text-center">
+                    <div class="pub pub-980x120 uk-inline">
+                        <div class="uk-overlay uk-position-cover">
+                            <div class="uk-position-center">
+                                مساحة إعلانية شاغرة
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </main>
+    <!-- main mobile -->
+
+    <footer class="page-footer" id="page-footer"></footer>
+    <!-- footer -->
+
+</body>
+
+</html>

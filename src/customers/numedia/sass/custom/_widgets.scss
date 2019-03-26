@@ -1,0 +1,126 @@
+@import "colors";
+.widget-header-social-links {
+    .title {
+        font-size: 1.3rem;
+        margin-top: 0;
+        line-height: 1.2rem;
+    }
+    .uk-navbar-nav {
+        padding: 0 15px;
+        >li>a {
+            padding: 0 15px;
+        }
+    }
+}
+
+.widget-weather {
+    width: 315px;
+    margin: auto;
+    .widget-title {
+        font-size: 1.2rem;
+        border-bottom: 1px solid rgba(0, 0, 0, 0.06);
+        padding: 7px 10px;
+        color: #999;
+    }
+    .weather-item {
+        .now {
+            font-size: 3rem;
+            line-height: 3rem;
+            width: max-content;
+        }
+        .wilaya {
+            font-size: 1.4rem;
+            line-height: 2rem;
+            width: max-content;
+        }
+        .tmp {
+            font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, "Helvetica Neue", Arial, "Noto Sans", sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", "Noto Color Emoji" !important;
+            font-size: 3rem;
+        }
+        .weather-img {
+            width: 180px;
+            height: 130px;
+            overflow: visible;
+            padding: 0 !important;
+            img {
+                width: 250px;
+                height: 180px;
+                max-width: none;
+                margin-right: -70px;
+            }
+        }
+    }
+}
+
+.widget-footer-1 {
+    img {
+        padding-top: 10px;
+    }
+}
+
+.widget-footer-contacts {
+    a {
+        &:hover {
+            color: $color-yellow;
+        }
+    }
+}
+
+.breaking-news-ticker {
+    font-size: 20px;
+    .bn-news {
+        font-size: 20px;
+        padding-bottom: 5px;
+        line-height: 33px;
+    }
+}
+
+.news-ticker {
+    position: relative;
+    background: #fff;
+    &.urgent-news-ticker {}
+}
+
+.section-last-news {
+    .widget_polls-widget {
+        width: 315px;
+        margin: auto;
+        .widget-title {
+            font-size: 1.2rem;
+            border-bottom: 1px solid rgba(0, 0, 0, 0.06);
+            padding: 7px 10px;
+            color: #999;
+            margin: 0;
+        }
+        .wp-polls,
+        .wp-polls-form {
+            font-size: 1.4rem;
+            p {
+                margin-bottom: 5px;
+            }
+        }
+        .wp-polls-ans {
+            padding-left: 13px;
+            box-sizing: border-box;
+        }
+        .wp-polls {
+            .pollbar {
+                margin: 1px;
+                font-size: 6px;
+                line-height: 8px;
+                height: 8px;
+                background: $color-yellow;
+                border: 1px solid darken($color-yellow, 5);
+            }
+            p {
+                margin: 0;
+                padding: 10px 0;
+            }
+        }
+        .wp-polls ul,
+        .wp-polls-ul,
+        .wp-polls-ans ul {
+            font-size: 1.4rem;
+        }
+    }
+}

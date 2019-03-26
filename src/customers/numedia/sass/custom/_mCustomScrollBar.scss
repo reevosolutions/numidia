@@ -1,0 +1,117 @@
+$color-mCS-numedia: rgb(230, 38, 73);
+.mCS-dir-rtl {
+    /* non-visible scrollbar */
+    >.mCSB_inside {
+        >.mCSB_container {
+            /* RTL direction/left-side scrollbar */
+            margin-left: 0;
+            margin-right: 6px;
+        }
+        >.mCSB_container.mCS_no_scrollbar_y.mCS_y_hidden {
+            margin-right: 0;
+        }
+    }
+    /* scrollbar position: outside */
+    >.mCSB_inside>.mCSB_scrollTools,
+    >.mCSB_outside+.mCSB_scrollTools {
+        /* RTL direction/left-side scrollbar */
+        left: auto;
+        right: 0;
+    }
+    >.mCSB_outside+.mCSB_scrollTools {
+        right: -26px;
+    }
+    /* non-visible vertical scrollbar/RTL direction/left-side scrollbar */
+    >.mCustomScrollBox.mCSB_vertical_horizontal.mCSB_inside>.mCSB_scrollTools.mCSB_scrollTools_horizontal {
+        left: 0;
+    }
+    /* RTL direction/left-side scrollbar */
+    >.mCustomScrollBox.mCSB_vertical_horizontal.mCSB_inside>.mCSB_scrollTools.mCSB_scrollTools_horizontal {
+        right: 20px;
+    }
+    /* non-visible scrollbar/RTL direction/left-side scrollbar */
+    >.mCustomScrollBox.mCSB_vertical_horizontal.mCSB_inside>.mCSB_container_wrapper.mCS_no_scrollbar_y.mCS_y_hidden+.mCSB_scrollTools~.mCSB_scrollTools.mCSB_scrollTools_horizontal {
+        right: 0;
+    }
+    /* RTL direction/left-side scrollbar */
+    >.mCSB_inside>.mCSB_container_wrapper {
+        margin-left: 0;
+        margin-right: 6px;
+    }
+    /* RTL direction/left-side scrollbar */
+    >.mCSB_outside+.mCS-minimal.mCSB_scrollTools_vertical,
+    >.mCSB_outside+.mCS-minimal-dark.mCSB_scrollTools_vertical {
+        right: 0;
+        left: auto;
+    }
+}
+
+
+/* theme "numedia" */
+
+.mCS-numedia.mCSB_scrollTools.mCSB_scrollTools {
+    top: 8px;
+    right: 0;
+    bottom: 8px;
+    .mCSB_draggerRail {
+        width: 4px;
+        background-color: transparentize(#000, .96);
+    }
+    .mCSB_dragger .mCSB_dragger_bar {
+        width: 4px;
+    }
+}
+
+.mCS-numedia.mCSB_scrollTools_horizontal .mCSB_dragger .mCSB_dragger_bar,
+.mCS-numedia.mCSB_scrollTools_horizontal .mCSB_draggerRail {
+    width: 100%;
+    height: 6px;
+    margin: 5px 0;
+}
+
+.mCS-numedia.mCSB_scrollTools_vertical.mCSB_scrollTools_onDrag_expand .mCSB_dragger.mCSB_dragger_onDrag_expanded+.mCSB_draggerRail,
+.mCS-numedia.mCSB_scrollTools_vertical.mCSB_scrollTools_onDrag_expand .mCSB_draggerContainer:hover .mCSB_draggerRail {
+    width: 12px;
+}
+
+.mCS-numedia.mCSB_scrollTools_horizontal.mCSB_scrollTools_onDrag_expand .mCSB_dragger.mCSB_dragger_onDrag_expanded+.mCSB_draggerRail,
+.mCS-numedia.mCSB_scrollTools_horizontal.mCSB_scrollTools_onDrag_expand .mCSB_draggerContainer:hover .mCSB_draggerRail {
+    height: 12px;
+    margin: 2px 0;
+}
+
+
+/* theme "numedia" */
+
+.mCS-numedia.mCSB_scrollTools .mCSB_dragger .mCSB_dragger_bar {
+    background-color: transparentize($color-mCS-numedia, .6);
+}
+
+.mCS-numedia.mCSB_scrollTools .mCSB_dragger:hover .mCSB_dragger_bar {
+    background-color: transparentize($color-mCS-numedia, 0.3);
+}
+
+.mCS-numedia.mCSB_scrollTools .mCSB_dragger:active .mCSB_dragger_bar,
+.mCS-numedia.mCSB_scrollTools .mCSB_dragger.mCSB_dragger_onDrag .mCSB_dragger_bar {
+    background-color: transparentize($color-mCS-numedia, .1);
+}
+
+.mCS-numedia.mCSB_scrollTools .mCSB_draggerRail {
+    background-color: transparentize($color-mCS-numedia, .9);
+}
+
+.mCS-numedia.mCSB_scrollTools .mCSB_buttonUp {
+    background-position: -112px -72px;
+}
+
+.mCS-numedia.mCSB_scrollTools .mCSB_buttonDown {
+    background-position: -112px -92px;
+}
+
+.mCS-numedia.mCSB_scrollTools .mCSB_buttonLeft {
+    background-position: -120px -112px;
+}
+
+.mCS-numedia.mCSB_scrollTools .mCSB_buttonRight {
+    background-position: -120px -128px;
+}

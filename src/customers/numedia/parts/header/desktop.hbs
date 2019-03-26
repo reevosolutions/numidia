@@ -1,0 +1,81 @@
+<div uk-sticky="show-on-up: true; animation: uk-animation-slide-top; sel-target: .uk-navbar-container; cls-active: uk-navbar-sticky"
+    class="uk-background-white">
+    <nav class="uk-navbar-container uk-navbar-transparent uk-box-shadow-medium" uk-navbar>
+        <div class="uk-navbar-right">
+            <a class="uk-navbar-item uk-logo uk-display-block uk-text-center" title="{{app.name}}" href="{{app.url}}">
+                <img data-src="{{app.logo}}" alt="{{app.name}}" width="173" uk-img>
+                <span class="slogan uk-display-block uk-text-small">{{{app.slogan}}}</span>
+            </a>
+        </div>
+
+        <div class="uk-navbar nav-overlay uk-margin-auto">
+            <ul class="uk-navbar-nav">
+                {{#each menus.main}}
+                <li class="{{#if active}}uk-active{{/if}} {{#if live}}live{{/if}}">
+                    <a href="{{href}}" class=""><span>{{title}}</span></a>
+                    {{#if children}}
+                    <div class="uk-navbar-dropdown uk-box-shadow-medium"
+                        uk-dropdown="animation: uk-animation-slide-top-small; duration: 400; offset: 0">
+                        <ul class="uk-nav uk-navbar-dropdown-nav">
+                            {{#each children}}
+                            <li class="{{#if this.active}}uk-active{{/if}} {{#if this.live}}live{{/if}}">
+                                <a href="{{this.href}}" class=""><span>{{this.title}}</span></a>
+                            </li>
+                            {{/each}}
+                        </ul>
+                    </div>
+                    {{/if}}
+                </li>
+                {{/each}}
+            </ul>
+        </div>
+
+        <div class="nav-overlay uk-navbar-left uk-flex-1" hidden>
+
+            <div class="uk-navbar-item uk-width-expand">
+                <form class="uk-search uk-search-navbar uk-width-1-1" action="{{app.url}}">
+                    <input class="uk-search-input" type="search" name="s" placeholder="بحث..." autofocus>
+                </form>
+            </div>
+
+            <a class="uk-navbar-toggle" uk-toggle="target: .nav-overlay; animation: uk-animation-fade" href="#"
+                uk-icon="icon: close; ratio: 1.5;" title="إخفاء البحث"></a>
+
+        </div>
+
+        {{#if app.headerCustomLink.href}}
+        <div class="uk-navbar-left dz-header-custom-link-wrapper">
+            <a class="dz-header-custom-link" href="{{{app.headerCustomLink.href}}}" title="{{{app.headerCustomLink.title}}}">
+                {{#if app.headerCustomLink.image}}
+                <img data-src="{{app.headerCustomLink.image}}" alt="{{app.headerCustomLink.title}}" uk-img>
+                {{/if}}
+                {{{app.headerCustomLink.title}}}
+            </a>
+        </div>
+        {{/if}}
+
+        <div class="uk-navbar-left">
+            <div class="nav-overlay search-toggle">
+                <a class="uk-navbar-toggle" uk-toggle="target: .nav-overlay; animation: uk-animation-fade" href="#"
+                    uk-icon="icon: search; ratio: 1.5;" title="إظهار البحث"></a>
+            </div>
+            <div class="widget widget-header-social-links uk-text-center uk-inline uk-visible@l">
+                <div class="title uk-text-small uk-position-top-center">للتواصل معنا</div>
+                <ul class="uk-navbar-nav">
+                    <li><a rel="noreferrer" target="_blank" href="{{app.social.facebook}}"
+                            class="uk-icon-link sn-hover-facebook" uk-icon="icon: facebook; ratio: 1.2;"
+                            title="فيسبوك"></a>
+                    </li>
+                    <li><a rel="noreferrer" target="_blank" href="{{app.social.instagram}}"
+                            class="uk-icon-link sn-hover-instagram" uk-icon="icon: instagram; ratio: 1.2;"
+                            title="انستغرام"></a>
+                    </li>
+                    <li><a rel="noreferrer" target="_blank" href="{{app.social.twitter}}"
+                            class="uk-icon-link sn-hover-twitter" uk-icon="icon: twitter; ratio: 1.2;"
+                            title="تويتر"></a>
+                    </li>
+                </ul>
+            </div>
+        </div>
+    </nav>
+</div>

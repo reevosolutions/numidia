@@ -1,0 +1,51 @@
+<div uk-slideshow="ratio: false; animation: push;" tabindex="-1" data-uk-observe
+    class="slideshow-main-slider uk-position-relative">
+    <div class="uk-slideshow-items items" uk-height-viewport="min-height: 450; offset-bottom: 70">
+    </div>
+
+    <div class="uk-text-left slider-controls-wrapper">
+        <div class="uk-inline">
+            <ul class="uk-slideshow-nav uk-dotnav"></ul>
+        </div>
+        <a class="slidenav previous" href="#" uk-slidenav-previous uk-slideshow-item="previous"></a>
+        <a class="slidenav next" href="#" uk-slidenav-next uk-slideshow-item="next"></a>
+    </div>
+</div>
+<div class="uk-light uk-grid-small slideshow-main-slider-infos-wrapper " uk-grid>
+    <div class="uk-width-2-3 content-wrapper">
+        <div class="inner">
+            <a href="{{href}}" class="content uk-display-block">
+                <span class="title">vendredi ماشي عادي</span>
+                <span class="description"></span>
+            </a>
+        </div>
+    </div>
+    <div class="uk-width-1-3 times-wrapper uk-position-relative">
+        <div class="inner">
+            <a href="{{href}}" class="uk-display-block">
+                <span class="days">كل خميس</span>
+                <span class="times">22:00</span>
+            </a>
+        </div>
+        <div class="channel-infos uk-overlay uk-position-bottom uk-background-muted uk-padding-small">
+            <div class="uk-grid-small" uk-grid>
+                <div class="uk-width-2-5">
+                    <span class="uk-display-block channel-infos-label">تردد قناتنا</span>
+                    <span class="uk-display-block channel-infos-satellite">على {{app.channelInfos.satellite}}</span>
+                </div>
+                <div class="uk-width-3-5">
+                    <span class="uk-display-block uk-text-center">
+                        <span class="uk-inline channel-infos-frequency-wrapper">
+                            <span class="channel-infos-frequency-inner uk-flex uk-flex-middle uk-text-center">
+                                <span class="channel-infos-frequency">{{app.channelInfos.frequency}}</span>
+                                <span class="channel-infos-polarity">{{app.channelInfos.polarity}}</span>
+                            </span>
+                        </span>
+                    </span>
+                    <span class="uk-display-block channel-infos-symbol-rate">معدل الترميز
+                        {{app.channelInfos.symbolRate}}</span>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>

@@ -1,0 +1,27 @@
+<div
+    class="uk-card article-card article-card-last-news-other uk-border-rounded uk-box-shadow-small uk-box-shadow-hover-medium rv-hover-effect-3d">
+    <div class="uk-card-media uk-position-relative uk-inline-clip uk-width-1-1">
+        <div class="uk-inline uk-light uk-display-block">
+            <a href="{{href}}" class="uk-display-block">
+                <img data-src="{{image.url}}" width="{{image.width}}" height="{{image.height}}" alt="{{title}}"
+                    class="uk-border-rounded uk-width-expand" uk-img>
+            </a>
+            <a href="{{href}}" class="uk-overlay uk-position-bottom uk-padding-small content-bg-bottom">
+                <h3 class="title uk-margin-small">{{{title}}}</h3>
+                <p class="description uk-margin-remove">{{{description}}}</p>
+            </a>
+        </div>
+        <div class="uk-position-top-left uk-padding-small">
+            <a href="#" class="uk-icon-link" uk-icon="icon: sharethis; ratio: .5;"></a>
+            <div uk-dropdown="animation: uk-animation-slide-top-small; duration: 500; mode: click; pos: bottom-left;"
+                class="uk-text-center uk-border-rounded dropdown-share">
+                <a href="{{href}}" class="uk-icon-button uk-margin-small-left sn-twitter" uk-icon="twitter"
+                    data-url="{{href}}" data-title="{{title}}"></a>
+                <a href="{{href}}" class="uk-icon-button  uk-margin-small-left sn-facebook" uk-icon="facebook"
+                    data-url="{{href}}" data-title="{{title}}"></a>
+                <a href="{{href}}" class="uk-icon-button sn-google_plus" uk-icon="google-plus" data-url="{{href}}"
+                    data-title="{{title}}"></a>
+            </div>
+        </div>
+    </div><!-- relative -->
+</div>

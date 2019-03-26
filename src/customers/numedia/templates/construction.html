@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html dir="rtl" lang="ar">
+
+<head>
+    <meta charset="UTF-8">
+    <title>
+        <%= htmlWebpackPlugin.options.title %>
+    </title>
+    <link rel="manifest" href="/wp-content/themes/dzNumedia/assets/icons/manifest.json">
+    <script>
+        var vv = {
+            view: "error404",
+            page: 1,
+        };
+    </script>
+</head>
+
+<body>
+    <header class="page-header" id="page-header"></header>
+    <!-- /.header -->
+
+    <main class="page-main uk-background-muted" id="page-main">
+        <section class="live-wrapper" id="live-wrapper">
+            <div class="uk-container">
+                <div class="message-construction">
+                    <img class="construction-icon" src="data:image/svg+xml;base64,PHN2ZyB4bWxucz0iaHR0cDovL3d3dy53My5vcmcvMjAwMC9zdmciIHZpZXdCb3g9IjAgMCA2NCA2NCIgd2lkdGg9IjUxMiIgaGVpZ2h0PSI1MTIiIGNsYXNzPSIiPjxnPjxnIGlkPSJCcm93c2VyIj48cGF0aCBkPSJNNTMsMTFWNTNIN2E0LDQsMCwwLDEtNC00VjExWiIgc3R5bGU9ImZpbGw6IzdCMDBGRCIgZGF0YS1vcmlnaW5hbD0iIzc4QjlFQiIgY2xhc3M9IiIgZGF0YS1vbGRfY29sb3I9IiM3MjAwRkYiPjwvcGF0aD48cG9seWdvbiBwb2ludHM9IjUzIDExIDUzIDUzIDcgNTMgNDkgMTEgNTMgMTEiIHN0eWxlPSJmaWxsOiM1QjMxQUUiIGRhdGEtb3JpZ2luYWw9IiM1QUFBRTciIGNsYXNzPSIiIGRhdGEtb2xkX2NvbG9yPSIjNUQzMkIyIj48L3BvbHlnb24+PHBhdGggZD0iTTQ2LDE3SDEwYTEsMSwwLDAsMC0xLDFWMzZhMSwxLDAsMCwwLDEsMUg0N1YxOEExLDEsMCwwLDAsNDYsMTdaIiBzdHlsZT0iZmlsbDojZmZkZTU1IiBkYXRhLW9yaWdpbmFsPSIjRkZERTU1IiBjbGFzcz0iIj48L3BhdGg+PHBhdGggZD0iTTU2LjY3LDQ4LjYyQTExLjEyMiwxMS4xMjIsMCwwLDEsNTUuNCw1MS43bDIuNjIsMy40OS0yLjgzLDIuODNMNTEuNyw1NS40YTExLjEyMiwxMS4xMjIsMCwwLDEtMy4wOCwxLjI3TDQ4LDYxSDQ0bC0uNjItNC4zM0ExMS4xMjIsMTEuMTIyLDAsMCwxLDQwLjMsNTUuNGwtMy40OSwyLjYyLTIuODMtMi44M0wzNS42Miw1M2wuOTgtMS4zYTExLjEyMiwxMS4xMjIsMCwwLDEtMS4yNy0zLjA4TDMxLDQ4VjQ0bDQuMzMtLjYyQTExLjEyMiwxMS4xMjIsMCwwLDEsMzYuNiw0MC4zTDM0LjEyLDM3bC0uMTQtLjE5LDIuODMtMi44M0w0MC4zLDM2LjZhMTEuMTIyLDExLjEyMiwwLDAsMSwzLjA4LTEuMjdMNDQsMzFoNGwuNjIsNC4zM0ExMS4xMjIsMTEuMTIyLDAsMCwxLDUxLjcsMzYuNmwxLjMtLjk4LDIuMTktMS42NCwyLjgzLDIuODNMNTUuNCw0MC4zYTExLjEyMiwxMS4xMjIsMCwwLDEsMS4yNywzLjA4TDYxLDQ0djRaIiBzdHlsZT0iZmlsbDojZmZhNzMzIiBkYXRhLW9yaWdpbmFsPSIjRkZBNzMzIiBjbGFzcz0iIj48L3BhdGg+PHBhdGggZD0iTTUzLDd2NEgzVjdBNCw0LDAsMCwxLDcsM0g0OUE0LDQsMCwwLDEsNTMsN1oiIHN0eWxlPSJmaWxsOiNmZjc5NTYiIGRhdGEtb3JpZ2luYWw9IiNGRjc5NTYiIGNsYXNzPSIiPjwvcGF0aD48Y2lyY2xlIGN4PSI0NiIgY3k9IjQ2IiByPSI2IiBzdHlsZT0iZmlsbDojZmY2MjQzIiBkYXRhLW9yaWdpbmFsPSIjRkY2MjQzIiBjbGFzcz0iIj48L2NpcmNsZT48cmVjdCB4PSI4IiB5PSI2IiB3aWR0aD0iMiIgaGVpZ2h0PSIyIiBzdHlsZT0iZmlsbDojZmZkNDIyIiBkYXRhLW9yaWdpbmFsPSIjRkZENDIyIj48L3JlY3Q+PHJlY3QgeD0iMTIiIHk9IjYiIHdpZHRoPSIyIiBoZWlnaHQ9IjIiIHN0eWxlPSJmaWxsOiMwMGNjYjMiIGRhdGEtb3JpZ2luYWw9IiMwMENDQjMiPjwvcmVjdD48cmVjdCB4PSIxNiIgeT0iNiIgd2lkdGg9IjIiIGhlaWdodD0iMiIgc3R5bGU9ImZpbGw6I2ZmNTAyMyIgZGF0YS1vcmlnaW5hbD0iI0ZGNTAyMyI+PC9yZWN0PjxyZWN0IHg9IjIyIiB5PSI2IiB3aWR0aD0iMjIiIGhlaWdodD0iMiIgc3R5bGU9ImZpbGw6I2U2ZTdlOCIgZGF0YS1vcmlnaW5hbD0iI0U2RTdFOCIgY2xhc3M9IiI+PC9yZWN0PjxyZWN0IHg9IjkiIHk9IjQyIiB3aWR0aD0iMTYiIGhlaWdodD0iMiIgc3R5bGU9ImZpbGw6IzdCMDBGRCIgZGF0YS1vcmlnaW5hbD0iIzNEOUFFMiIgY2xhc3M9IiIgZGF0YS1vbGRfY29sb3I9IiM3OTAxRjgiPjwvcmVjdD48cmVjdCB4PSI5IiB5PSI0NiIgd2lkdGg9IjE2IiBoZWlnaHQ9IjIiIHN0eWxlPSJmaWxsOiM3QjAwRkQiIGRhdGEtb3JpZ2luYWw9IiMzRDlBRTIiIGNsYXNzPSIiIGRhdGEtb2xkX2NvbG9yPSIjNzkwMUY4Ij48L3JlY3Q+PHJlY3QgeD0iMjciIHk9IjI2IiB3aWR0aD0iMiIgaGVpZ2h0PSIyIiBzdHlsZT0iZmlsbDojZmZjZDAwIiBkYXRhLW9yaWdpbmFsPSIjRkZDRDAwIj48L3JlY3Q+PHJlY3QgeD0iMzEiIHk9IjI2IiB3aWR0aD0iNCIgaGVpZ2h0PSIyIiBzdHlsZT0iZmlsbDojZmZjZDAwIiBkYXRhLW9yaWdpbmFsPSIjRkZDRDAwIj48L3JlY3Q+PHJlY3QgeD0iMjEiIHk9IjI2IiB3aWR0aD0iNCIgaGVpZ2h0PSIyIiBzdHlsZT0iZmlsbDojZmZjZDAwIiBkYXRhLW9yaWdpbmFsPSIjRkZDRDAwIj48L3JlY3Q+PHJlY3QgeD0iNDUiIHk9IjM1IiB3aWR0aD0iMiIgaGVpZ2h0PSIyIiBzdHlsZT0iZmlsbDojRUU4NzAwIiBkYXRhLW9yaWdpbmFsPSIjRUU4NzAwIiBjbGFzcz0iYWN0aXZlLXBhdGgiIGRhdGEtb2xkX2NvbG9yPSIjZWU4NzAwIj48L3JlY3Q+PHJlY3QgeD0iMzcuOTI5IiB5PSIzNy45MjkiIHdpZHRoPSIyIiBoZWlnaHQ9IjIiIHRyYW5zZm9ybT0idHJhbnNsYXRlKC0xNi4xMjUgMzguOTI5KSByb3RhdGUoLTQ1KSIgc3R5bGU9ImZpbGw6I0VFODcwMCIgZGF0YS1vcmlnaW5hbD0iI0VFODcwMCIgY2xhc3M9ImFjdGl2ZS1wYXRoIiBkYXRhLW9sZF9jb2xvcj0iI2VlODcwMCI+PC9yZWN0PjxyZWN0IHg9IjM1IiB5PSI0NSIgd2lkdGg9IjIiIGhlaWdodD0iMiIgc3R5bGU9ImZpbGw6I0VFODcwMCIgZGF0YS1vcmlnaW5hbD0iI0VFODcwMCIgY2xhc3M9ImFjdGl2ZS1wYXRoIiBkYXRhLW9sZF9jb2xvcj0iI2VlODcwMCI+PC9yZWN0PjxyZWN0IHg9IjM3LjkyOSIgeT0iNTIuMDcxIiB3aWR0aD0iMiIgaGVpZ2h0PSIyIiB0cmFuc2Zvcm09InRyYW5zbGF0ZSgtMjYuMTI1IDQzLjA3MSkgcm90YXRlKC00NSkiIHN0eWxlPSJmaWxsOiNFRTg3MDAiIGRhdGEtb3JpZ2luYWw9IiNFRTg3MDAiIGNsYXNzPSJhY3RpdmUtcGF0aCIgZGF0YS1vbGRfY29sb3I9IiNlZTg3MDAiPjwvcmVjdD48cmVjdCB4PSI0NSIgeT0iNTUiIHdpZHRoPSIyIiBoZWlnaHQ9IjIiIHN0eWxlPSJmaWxsOiNFRTg3MDAiIGRhdGEtb3JpZ2luYWw9IiNFRTg3MDAiIGNsYXNzPSJhY3RpdmUtcGF0aCIgZGF0YS1vbGRfY29sb3I9IiNlZTg3MDAiPjwvcmVjdD48cmVjdCB4PSI1Mi4wNzEiIHk9IjUyLjA3MSIgd2lkdGg9IjIiIGhlaWdodD0iMiIgdHJhbnNmb3JtPSJ0cmFuc2xhdGUoLTIxLjk4MyA1My4wNzEpIHJvdGF0ZSgtNDUpIiBzdHlsZT0iZmlsbDojRUU4NzAwIiBkYXRhLW9yaWdpbmFsPSIjRUU4NzAwIiBjbGFzcz0iYWN0aXZlLXBhdGgiIGRhdGEtb2xkX2NvbG9yPSIjZWU4NzAwIj48L3JlY3Q+PHJlY3QgeD0iNTUiIHk9IjQ1IiB3aWR0aD0iMiIgaGVpZ2h0PSIyIiBzdHlsZT0iZmlsbDojRUU4NzAwIiBkYXRhLW9yaWdpbmFsPSIjRUU4NzAwIiBjbGFzcz0iYWN0aXZlLXBhdGgiIGRhdGEtb2xkX2NvbG9yPSIjZWU4NzAwIj48L3JlY3Q+PHJlY3QgeD0iNTIuMDcxIiB5PSIzNy45MjkiIHdpZHRoPSIyIiBoZWlnaHQ9IjIiIHRyYW5zZm9ybT0idHJhbnNsYXRlKC0xMS45ODMgNDguOTI5KSByb3RhdGUoLTQ1KSIgc3R5bGU9ImZpbGw6I0VFODcwMCIgZGF0YS1vcmlnaW5hbD0iI0VFODcwMCIgY2xhc3M9ImFjdGl2ZS1wYXRoIiBkYXRhLW9sZF9jb2xvcj0iI2VlODcwMCI+PC9yZWN0PjwvZz48L2c+IDwvc3ZnPg=="
+                    />
+                    <h2 class="uk-text-center uk-margin-remove-top">هذه الصفحة قيد التطوير</h2>
+                </div>
+        </section>
+
+        <div class="uk-container">
+            <div class="widget widget-pub-bottom">
+                <div class="uk-padding uk-padding-remove-horizontal uk-text-center">
+                    <div class="pub pub-980x120 uk-inline">
+                        <div class="uk-overlay uk-position-cover">
+                            <div class="uk-position-center">
+                                مساحة إعلانية شاغرة
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </main>
+    <!-- main -->
+
+    <footer class="page-footer" id="page-footer"></footer>
+    <!-- footer -->
+
+</body>
+
+</html>

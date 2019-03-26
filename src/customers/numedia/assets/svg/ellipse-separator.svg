@@ -1,0 +1,16 @@
+<svg xmlns="http://www.w3.org/2000/svg" 
+    xmlns:se="http://svg-edit.googlecode.com" 
+    xmlns:xlink="http://www.w3.org/1999/xlink" 
+    xmlns:dc="http://purl.org/dc/elements/1.1/" 
+    xmlns:cc="http://creativecommons.org/ns#" 
+    xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#" 
+    xmlns:inkscape="http://www.inkscape.org/namespaces/inkscape" width="888.1570228653259" height="186.5454528258315" style="">
+    <title>my vector image</title>
+    <!-- Created with Vector Paint - http://www.vectorpaint.yaks.com/ https://chrome.google.com/webstore/detail/hnbpdiengicdefcjecjbnjnoifekhgdo -->
+    <!-- <rect id="backgroundrect" width="100%" height="100%" x="0" y="0" fill="#FFFFFF" stroke="none" class="" style=""/> -->
+    <g style="" class="currentLayer">
+        <title>Layer 1</title>
+        <path fill="#2c2541" fill-opacity="1" stroke="none" stroke-opacity="1" stroke-width="2" stroke-dasharray="none" stroke-linejoin="round" stroke-linecap="butt" stroke-dashoffset="" fill-rule="nonzero" opacity="1" marker-start="" marker-mid="" marker-end="" d="M-221.84223738776325,371.2100747180365 C-221.84223738776325,173.86991984693321 125.0075445966524,14.024394401339443 553.2171519848197,14.024394401339443 C981.4267593729872,14.024394401339443 1328.276541357402,173.86991984693321 1328.276541357402,371.2100747180365 C1328.276541357402,568.5502295891398 981.4267593729872,728.3957550347329 553.2171519848197,728.3957550347329 C125.0075445966524,728.3957550347329 -221.84223738776325,568.5502295891398 -221.84223738776325,371.2100747180365 z" id="svg_1" class="selected" transform="rotate(-8.014405250549316 553.2171630859373,371.21005249023426) "/>
+        <path fill="#ebeb1a" fill-opacity="1" stroke="none" stroke-opacity="1" stroke-width="2" stroke-dasharray="none" stroke-linejoin="round" stroke-linecap="butt" stroke-dashoffset="" fill-rule="nonzero" opacity="1" marker-start="" marker-mid="" marker-end="" d="M362,262 C362,262 362.22375690607737,262 362.5,262 C362.77624309392263,262 363,262 363,262 C363,262 362.77624309392263,262 362.5,262 C362.22375690607737,262 362,262 362,262 Z" id="svg_3"/>
+    </g>
+</svg>

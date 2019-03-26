@@ -1,0 +1,65 @@
+<div class="uk-light uk-grid-small slideshow-main-slider-v2-wrapper " uk-grid>
+    <div class="uk-width-5-7 slideshow-main-slider-v2-inner">
+        <div uk-slideshow="ratio: false; animation: push;" tabindex="-1" data-uk-observe
+            class="slideshow-main-slider-v2 uk-position-relative">
+            <div class="uk-slideshow-items items" uk-height-viewport="min-height: 450; offset-bottom: 70">
+            </div>
+            <div class="uk-text-center slider-controls-wrapper">
+                <div class="uk-margin-small">
+                    <a class="slidenav previous" href="#" uk-slidenav-previous uk-slideshow-item="previous"></a>
+                    <a class="slidenav next" href="#" uk-slidenav-next uk-slideshow-item="next"></a>
+                </div>
+                <div class="">
+                    <ul class="uk-slideshow-nav uk-dotnav"></ul>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="uk-width-2-7 content-wrapper">
+        <div class="inner">
+            <a href="{{href}}" class="content uk-display-block article-link">
+                <span class="title">vendredi ماشي عادي</span>
+                <span class="description">وصف البمحتوى وصف البمحتوى وصف البمحتوى وصف البمحتوى وصف البمحتوى وصف
+                    البمحتوى
+                    وصف البمحتوى </span>
+                <span class="btn-read-more-wrapper uk-display-block uk-text-center uk-margin-small-top"><span
+                        class="btn-read-more rv-hover-effect-3d uk-inline uk-button uk-border-rounded">المزيد</span></span>
+            </a>
+        </div>
+    </div>
+</div>
+
+<div class="uk-light uk-grid-small slideshow-main-slider-infos-wrapper uk-margin-remove uk-box-shadow-small" uk-grid>
+    <div class="uk-width-1-2 channel-infos-wrapper uk-position-relative uk-background-muted">
+        <div class="channel-infos ">
+            <div class="uk-grid-small" uk-grid>
+                <div class="uk-width-expand uk-text-left channel-infos-first">
+                    <span class="uk-inline channel-infos-label">تردد قناتنا</span>
+                    <span class="uk-inline channel-infos-satellite uk-margin-small-right">على
+                        {{app.channelInfos.satellite}}</span>
+                </div>
+                <div class="uk-width-auto channel-infos-last">
+                    <span class="uk-display-block uk-text-center">
+                        <span class="uk-inline channel-infos-frequency-wrapper">
+                            <span class="channel-infos-frequency-inner uk-flex uk-flex-middle uk-text-center">
+                                <span class="channel-infos-frequency">{{app.channelInfos.frequency}}</span>
+                                <span class="channel-infos-polarity">{{app.channelInfos.polarity}}</span>
+                            </span>
+                        </span>
+                    </span>
+                    <span class="uk-display-block channel-infos-symbol-rate">معدل الترميز
+                        {{app.channelInfos.symbolRate}}</span>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <div class="uk-width-1-2 times-wrapper uk-position-relative">
+        <div class="inner">
+            <a href="{{href}}" class="uk-display-block article-link">
+                <span class="days"></span>
+                <span class="times"></span>
+            </a>
+        </div>
+    </div>
+</div>

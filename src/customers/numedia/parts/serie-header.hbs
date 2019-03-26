@@ -1,0 +1,35 @@
+<div class="serie-header uk-background-default rv-hover-effect-wrapper">
+    <div class="show-times">
+        <div class="uk-inline">
+            <div class="uk-container">{{{showTimesText}}}</div>
+        </div>
+    </div>
+    <div class="uk-grid-collapse uk-child-width-1-2@s uk-grid-match uk-position-relative" uk-grid>
+        <div>
+            <div class="serie-header-content">
+                <ul class="uk-nav categories">
+                    {{#each categories}}
+                        <li class="uk-inline">
+                            <a class="uk-inline uk-padding-small uk-padding-remove-vertical" href="{{href}}"
+                                data-object="category" data-id="{{id}}">{{name}}</a>
+                        </li>
+                    {{/each}}
+                </ul>
+                <h1 class="uk-article-title title article-title uk-margin-small uk-margin-remove-top">{{{title}}}</h1>
+                <div class="description">{{{description}}}</div>
+                <a href="#"
+                    class="play-current-episode play-current-episode-link uk-inline uk-padding-small uk-padding-remove-horizontal">شاهد
+                    الحلقة الأخيرة الآن</a>
+            </div>
+        </div>
+        <div class="uk-background-cover uk-panel uk-flex uk-flex-center uk-flex-middle"
+            style="background-image: url({{image.url}});">
+        </div>
+        <div class="uk-position-center">
+            <a href="#"
+                class="play-current-episode play-current-episode-btn uk-padding-xsmall uk-display-block uk-border-pill uk-box-shadow-hover-medium rv-hover-effect-3d">
+                <span uk-icon="icon: play-uk; ratio:3;"></span>
+            </a>
+        </div>
+    </div>
+</div>

@@ -1,0 +1,16 @@
+@import "colors";
+.section-search-header {
+    color: $color-red-header;
+    font-size: 2.2rem;
+    line-height: 5rem;
+}
+
+.no-results-found {
+    >* {
+        text-align: center;
+        font-size: 1.6rem;
+        padding: 1.5rem;
+        margin: 3rem auto;
+        border: dashed 1px rgba(0, 0, 0, .05);
+    }
+}

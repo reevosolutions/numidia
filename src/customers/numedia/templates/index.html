@@ -1,0 +1,470 @@
+<!DOCTYPE html>
+<html dir="rtl" lang="ar">
+
+<head>
+    <meta charset="UTF-8">
+    <title>
+        <%= htmlWebpackPlugin.options.title %>
+    </title>
+    <link rel="manifest" href="/wp-content/themes/dzNumedia/assets/icons/manifest.json">
+    <!-- <link rel="stylesheet" href="//fonts.googleapis.com/earlyaccess/notokufiarabic.css" /> -->
+    <script>
+        var tplPath = '/wp-content/themes/dzNumedia';
+        var url = '/';
+        var vv = {
+            view: "homepage"
+        };
+    </script>
+
+</head>
+
+<body>
+    <header class="page-header" id="page-header">
+        <div class="rv-placeholder header desktop-only">
+            <div uk-sticky="sel-target: .uk-navbar-container; cls-active: uk-navbar-sticky" class="uk-background-white">
+                <nav class="uk-navbar-container uk-navbar-transparent uk-box-shadow-medium" uk-navbar>
+                    <div class="uk-navbar-right">
+                        <a class="uk-navbar-item uk-logo uk-display-block uk-text-center uk-padding-small" title="{{app.name}}" href="">
+                            <div class="logo"></div>
+                            <span class="slogan uk-display-block uk-text-small"></span>
+                        </a>
+                    </div>
+
+                    <div class="uk-navbar nav-overlay uk-margin-auto">
+                        <ul class="uk-navbar-nav">
+                            <li class=""><a href="#" class=""><span></span></a> </li>
+                            <li class=""><a href="#" class=""><span></span></a> </li>
+                            <li class=""><a href="#" class=""><span></span></a> </li>
+                            <li class=""><a href="#" class=""><span></span></a> </li>
+                            <li class=""><a href="#" class=""><span></span></a> </li>
+                        </ul>
+                    </div>
+
+                    <div class="nav-overlay uk-navbar-left uk-flex-1" hidden>
+
+                        <div class="uk-navbar-item uk-width-expand">
+                            <form class="uk-search uk-search-navbar uk-width-1-1" action="{{app.url}}">
+                                <input class="uk-search-input" type="search" name="s" placeholder="بحث..." autofocus>
+                            </form>
+                        </div>
+
+                        <a class="uk-navbar-toggle" uk-toggle="target: .nav-overlay; animation: uk-animation-fade" href="#" uk-icon="icon: close; ratio: 2;" title="إخفاء البحث"></a>
+                    </div>
+
+                    <div class="uk-navbar-left">
+                        <div class="nav-overlay search-toggle">
+                            <a class="uk-navbar-toggle" uk-toggle="target: .nav-overlay; animation: uk-animation-fade" href="#" uk-icon="icon: search; ratio: 2;" title="إظهار البحث"></a>
+                        </div>
+                        <div class="widget widget-header-social-links uk-text-center uk-inline uk-visible@l">
+                            <div class="title uk-text-small uk-position-top-center">للتواصل معنا</div>
+                            <ul class="uk-navbar-nav">
+                                <li>
+                                    <a rel="noreferrer" target="_blank" href="#" class="uk-icon-link sn-hover-facebook" uk-icon="icon: facebook; ratio: 1.2;" title="فيسبوك"></a>
+                                </li>
+                                <li>
+                                    <a rel="noreferrer" target="_blank" href="#" class="uk-icon-link sn-hover-instagram" uk-icon="icon: instagram; ratio: 1.2;" title="انستغرام"></a>
+                                </li>
+                                <li>
+                                    <a rel="noreferrer" target="_blank" href="#" class="uk-icon-link sn-hover-twitter" uk-icon="icon: twitter; ratio: 1.2;" title="تويتر"></a>
+                                </li>
+                            </ul>
+                        </div>
+                    </div>
+                </nav>
+            </div>
+        </div>
+    </header>
+
+    <section class="header-content mobile mobile-only">
+
+    </section>
+
+
+    <div class="sidemenu-wrapper uk-visible@m">
+        <span class="indicator"></span>
+        <ul uk-scrollspy-nav="closest: li; scroll: true; offset: 30" class="uk-nav uk-nav-default tm-nav uk-nav-parent-icon sidemenu scrollspy  uk-box-shadow-medium">
+            <li><a href="#section-main-slider"><span uk-icon="icon: homepage"></span></a></li>
+            <li><a href="#section-last-news"><span>آخر الأخبار</span></a></li>
+            <li><a href="#section-today-programs"><span>برامج اليوم</span></a></li>
+            <li><a href="#section-videos"><span>أخبار بالفيديو</span></a></li>
+            <li><a href="#section-playlist"><span>إعادة البث</span></a></li>
+            <li><a href="/live"><span>البث الحي</span></a></li>
+        </ul>
+    </div>
+    <!-- /.header -->
+
+    <main class="page-main uk-background-muted mobile-only" id="page-main-mobile">
+        <section class="section-main-slider mobile" id="section-main-slider">
+            <div class="subsection main">
+            </div>
+        </section>
+
+        <section class="section-last-news mobile" id="section-last-news">
+            <div class="uk-container">
+                <h2 class="subsection title  uk-position-relative uk-margin">
+                    أهم الأخبار
+                    <a class="uk-button uk-button-default uk-position-bottom-left btn-read-more" href="/featured-news">الكل</a>
+                </h2>
+                <div class="subsection main">
+                    <div class="uk-child-width-1-2@s uk-child-width-1-3@m uk-grid-small grid items" uk-grid></div>
+                </div>
+                <div class="widget widget-pub">
+                    <div class="uk-padding-small uk-padding-remove-horizontal uk-padding-remove-bottom uk-text-center">
+                        <div class="pub pub-748x90 uk-inline uk-border-rounded">
+                            <div class="uk-overlay uk-position-cover">
+                                <div class="uk-position-center">
+                                    مساحة إعلانية شاغرة
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="uk-padding-small uk-padding-remove-horizontal">
+                    <div class="last-news-overlay uk-text-center">
+                        <a class="last-news-more-button uk-button uk-border-rounded" uk-toggle="target: .last-news-overlay; animation: uk-animation-fade" href="#">المزيد من
+                            الأخبار</a>
+                    </div>
+                    <div class="subsection more last-news-overlay" hidden>
+                        <div class="uk-child-width-1-2@s uk-child-width-1-3@m uk-grid-small grid items" uk-grid></div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+
+        <section class="section-today-programs mobile" id="section-today-programs">
+            <h2 class="subsection title">
+                <span uk-icon="icon: tv-1; ratio: 1.5;" class="uk-padding-xsmall uk-padding-remove-vertical"></span>
+                <span class="title">برامج اليوم</span> <span class="date current-date"></span>
+            </h2>
+            <div class="subsection footer">
+                <ul class="uk-nav">
+                    <li class="uk-inline current">
+                        <span class="label uk-display-block">الآن</span>
+                        <span class="value uk-display-block"> 1برنامج</span>
+                    </li>
+                    <li class="uk-inline next">
+                        <span class="label uk-display-block">التالي</span>
+                        <span class="value uk-display-block"> برنامج 2</span>
+                    </li>
+                    <li class="uk-inline later">
+                        <span class="label uk-display-block">لاحقا</span>
+                        <span class="value uk-display-block"> برنامج 3</span>
+                    </li>
+                </ul>
+            </div>
+            <div class="subsection main uk-position-relative">
+
+            </div>
+            </div>
+        </section>
+
+        <section class="section-other-news mobile" id="section-other-news">
+            <div class="uk-container">
+                <h2 class="subsection title  uk-position-relative uk-margin">
+                    أخبار متنوعة
+                    <a class="uk-button uk-button-default uk-position-bottom-left btn-read-more" href="/archive.html">الكل</a>
+                </h2>
+                <div class="subsection main">
+                    <div class="subsection first">
+                    </div>
+                    <div class="widget widget-pub">
+                        <div class="uk-padding-small uk-padding-remove-horizontal uk-text-center">
+                            <div class="pub pub-748x90 uk-inline uk-border-rounded">
+                                <div class="uk-overlay uk-position-cover">
+                                    <div class="uk-position-center">
+                                        مساحة إعلانية شاغرة
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="subsection second">
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <section class="section-videos mobile" id="section-videos">
+            <div class="uk-container">
+                <h2 class="subsection title  uk-position-relative uk-margin">
+                    أخبار بالفيديو
+                </h2>
+                <div class="subsection main">
+                    <div class="subsection featured"> </div>
+                    <div class="subsection other"> </div>
+                </div>
+            </div>
+            <div class="subsection more">
+                <a href="/video" class="videos-more-link uk-display-block"><span
+                        uk-icon="icon: grid-layout; ratio: .75;" class="uk-margin-small-left"></a> آخر الفيديوهات</a>
+            </div>
+        </section>
+
+        <section class="section-bottom-pub mobile" id="section-bottom-pub">
+            <div class="widget widget-pub">
+                <div class="uk-padding-small uk-text-center">
+                    <div class="pub pub-748x90 uk-inline uk-border-rounded">
+                        <div class="uk-overlay uk-position-cover">
+                            <div class="uk-position-center">
+                                مساحة إعلانية شاغرة
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+            </div>
+        </section>
+
+    </main>
+    <!-- main mobile -->
+
+    <main class="page-main uk-background-muted desktop-only" id="page-main">
+        <section class="section-main-slider v2" id="section-main-slider">
+            <div class="subsection main">
+            </div>
+        </section>
+
+        <section class="section-last-news" id="section-last-news">
+            <div class="uk-container">
+                <h2 class="subsection title  uk-position-relative uk-margin">
+                    آخر الأخبار
+                    <a class="uk-button uk-button-default uk-position-bottom-left btn-read-more" href="/featured-news">المزيد</a>
+                </h2>
+            </div>
+            <div class="subsection main uk-container">
+                <div uk-grid>
+                    <div class="uk-width-2-3@m">
+
+                        <div class="uk-position-relative" tabindex="-1" uk-slider="animation: slide; center: false; sets: true;" data-uk-observe>
+                            <div class="place-featured uk-margin-bottom">
+                                <!-- placeholder -->
+                                <div class="rv-placeholder">
+                                    <!-- start placeholder -->
+                                    <div class=" uk-border-rounded uk-background-default uk-box-shadow-small uk-box-shadow-hover-large rv-hover-effect-3d">
+                                        <div class="article-card article-card-last-news-featured">
+                                            <div class="uk-card uk-grid uk-grid-small uk-child-width-1-2@s" uk-grid>
+                                                <div class="uk-card-media-right uk-cover-container uk-position-relative">
+                                                    <div class="image"></div>
+                                                </div>
+                                                <!-- relative -->
+                                                <div class="">
+                                                    <div class="uk-card-body uk-padding-small">
+                                                        <h3 class="title"></h3>
+                                                        <div class="description"></div>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <!-- end placeholder -->
+                                </div>
+                                <!-- placeholder -->
+                            </div>
+                            <div class="uk-position-top-left">
+                                <a class="slidenav previous" href="#" uk-slidenav-previous uk-slider-item="previous"></a>
+                                <a class="slidenav next" href="#" uk-slidenav-next uk-slider-item="next"></a>
+                            </div>
+                            <div class="uk-slider-items uk-grid place-other uk-grid-small uk-grid-match items uk-child-width-1-1">
+                                <div class="rv-placeholder">
+                                    <!-- start placeholder -->
+                                    <div class="uk-card article-card article-card-last-news-other uk-border-rounded uk-box-shadow-small uk-box-shadow-hover-medium rv-hover-effect-3d">
+                                        <div class="uk-card-media uk-position-relative uk-inline-clip uk-width-1-1">
+                                            <div class="uk-inline uk-light uk-display-block">
+                                                <div class="image"></div>
+                                                <a href="{{href}}" class="uk-overlay uk-position-bottom uk-padding-small content-bg-bottom">
+                                                    <h3 class="title uk-margin-small"></h3>
+                                                    <p class="description uk-margin-remove"></p>
+                                                </a>
+                                            </div>
+                                        </div>
+                                        <!-- relative -->
+                                    </div>
+                                    <!-- end placeholder -->
+                                </div>
+                                <div class="rv-placeholder">
+                                    <!-- start placeholder -->
+                                    <div class="uk-card article-card article-card-last-news-other uk-border-rounded uk-box-shadow-small uk-box-shadow-hover-medium rv-hover-effect-3d">
+                                        <div class="uk-card-media uk-position-relative uk-inline-clip uk-width-1-1">
+                                            <div class="uk-inline uk-light uk-display-block">
+                                                <div class="image"></div>
+                                                <a href="{{href}}" class="uk-overlay uk-position-bottom uk-padding-small content-bg-bottom">
+                                                    <h3 class="title uk-margin-small"></h3>
+                                                    <p class="description uk-margin-remove"></p>
+                                                </a>
+                                            </div>
+                                        </div>
+                                        <!-- relative -->
+                                    </div>
+                                    <!-- end placeholder -->
+                                </div>
+                                <div class="rv-placeholder">
+                                    <!-- start placeholder -->
+                                    <div class="uk-card article-card article-card-last-news-other uk-border-rounded uk-box-shadow-small uk-box-shadow-hover-medium rv-hover-effect-3d">
+                                        <div class="uk-card-media uk-position-relative uk-inline-clip uk-width-1-1">
+                                            <div class="uk-inline uk-light uk-display-block">
+                                                <div class="image"></div>
+                                                <a href="{{href}}" class="uk-overlay uk-position-bottom uk-padding-small content-bg-bottom">
+                                                    <h3 class="title uk-margin-small"></h3>
+                                                    <p class="description uk-margin-remove"></p>
+                                                </a>
+                                            </div>
+                                        </div>
+                                        <!-- relative -->
+                                    </div>
+                                    <!-- end placeholder -->
+                                </div>
+                                <div class="rv-placeholder">
+                                    <!-- start placeholder -->
+                                    <div class="uk-card article-card article-card-last-news-other uk-border-rounded uk-box-shadow-small uk-box-shadow-hover-medium rv-hover-effect-3d">
+                                        <div class="uk-card-media uk-position-relative uk-inline-clip uk-width-1-1">
+                                            <div class="uk-inline uk-light uk-display-block">
+                                                <div class="image"></div>
+                                                <a href="{{href}}" class="uk-overlay uk-position-bottom uk-padding-small content-bg-bottom">
+                                                    <h3 class="title uk-margin-small"></h3>
+                                                    <p class="description uk-margin-remove"></p>
+                                                </a>
+                                            </div>
+                                        </div>
+                                        <!-- relative -->
+                                    </div>
+                                    <!-- end placeholder -->
+                                </div>
+                            </div>
+
+                        </div>
+                    </div>
+                    <div class="uk-width-1-3@m">
+                        <div class="subsection sidebar">
+                            <div class="widget widget-weather uk-border-rounded uk-background-default uk-box-shadow-small uk-box-shadow-hover-medium">
+                                <h2 class="widget-title uk-margin-remove ">حالة الطقس</h2>
+                                <div class="widget-content uk-padding-small ">
+                                </div>
+                            </div>
+                            <div class="widget widget-pub">
+                                <div class="uk-padding-small uk-padding-remove-bottom uk-text-center">
+                                    <div class="pub pub-300x600 uk-inline uk-border-rounded">
+                                        <div class="uk-overlay uk-position-cover">
+                                            <div class="uk-position-center">
+                                                مساحة إعلانية شاغرة
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <section class="section-today-programs" id="section-today-programs">
+            <img data-src="/wp-content/themes/dzNumedia/assets/svg/ellipse-separator.svg" alt="separator" uk-img class="uk-width-expand ellipse-separator" />
+            <div class="main-wrapper">
+                <h2 class="subsection title uk-text-center">
+                    <span uk-icon="icon: tv-1; ratio: 4.5;" class="uk-padding-small uk-padding-remove-vertical"></span>
+                    <span class="title">برامج اليوم</span> <span class="date current-date"></span>
+                </h2>
+                <div class="subsection main uk-position-relative">
+                    <div class="carousel-nav uk-position-top-right">
+                        <a id="tl-carousel-prev" class="slidenav next" href="#" uk-slidenav-next uk-slider-item="next"></a>
+                        <a id="tl-carousel-next" class="slidenav previous" href="#" uk-slidenav-previous uk-slider-item="previous"></a>
+                    </div>
+                    <div class="carousel-wrapper">
+                        <div class="carousel"></div>
+                    </div>
+                </div>
+                <div class="subsection footer">
+                    <div class="uk-container">
+                        <ul class="uk-nav">
+                            <li class="uk-inline current">
+                                <span class="label uk-inline">الآن</span>
+                                <span class="icon uk-inline" uk-icon="icon: triangle-right; ratio: 1.5"></span>
+                                <span class="value uk-inline"> </span>
+                            </li>
+                            <li class="uk-inline next">
+                                <span class="label uk-inline">التالي</span>
+                                <span class="icon uk-inline" uk-icon="icon: triangle-right; ratio: 1.5"></span>
+                                <span class="value uk-inline"> </span>
+                            </li>
+                            <li class="uk-inline later">
+                                <span class="label uk-inline">لاحقا</span>
+                                <span class="icon uk-inline" uk-icon="icon: triangle-right; ratio: 1.5"></span>
+                                <span class="value uk-inline"> </span>
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <section class="section-videos" id="section-videos">
+            <div class="uk-container">
+                <h2 class="subsection title  uk-position-relative uk-margin">
+                    أخبار بالفيديو
+                    <a class="uk-button uk-button-default uk-position-center-left btn-read-more" href="/video">المزيد</a>
+                </h2>
+            </div>
+
+            <div class="subsection main uk-container">
+            </div>
+        </section>
+
+        <section class="section-other-news" id="section-other-news">
+            <div class="uk-container">
+                <h2 class="subsection title  uk-position-relative uk-margin">
+                    أخبار متنوعة
+                    <a class="uk-button uk-button-default uk-position-bottom-left btn-read-more" href="/archive.html">المزيد</a>
+                </h2>
+            </div>
+
+            <div class="subsection main  uk-container">
+
+            </div>
+        </section>
+
+        <section class="section-playlist" id="section-playlist">
+            <div class="uk-container">
+                <h2 class="subsection title  uk-position-relative uk-margin">
+                    إعادة بث
+                    <span class="uk-inline icon">
+                        <span uk-icon="icon: tv-3; ratio: 2"></span>
+                    </span>
+                </h2>
+            </div>
+
+            <div class="subsection main">
+                <div class="contents uk-switcher uk-margin" id="playlists">
+                </div>
+                <div class="uk-container-expand">
+                    <ul class="tabs uk-flex-center uk-subnav uk-subnav-divider" uk-switcher="connect: #playlists; animation: uk-animation-fade;">
+                    </ul>
+                </div>
+            </div>
+
+        </section>
+
+        <section class="section-bottom-pub" id="section-bottom-pub">
+            <div class="widget widget-pub">
+                <div class="uk-padding-small uk-text-center">
+                    <div class="pub pub-980x90 uk-inline">
+                        <div class="uk-overlay uk-position-cover">
+                            <div class="uk-position-center">
+                                مساحة إعلانية شاغرة
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+            </div>
+        </section>
+
+    </main>
+    <!-- main -->
+
+    <footer class="page-footer" id="page-footer"></footer>
+    <!-- footer -->
+
+</body>
+
+</html>
